@@ -21,6 +21,7 @@ docker build -t os-promptpay-generator .
 ```
 
 *Note_1: "os-promptpay-generator" is a docker image name, feel free to change it to any name you want.*
+
 *Note_2: don't forget "." at the end of the command!*
 
 ### Run Docker Image
