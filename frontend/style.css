@@ -1,0 +1,121 @@
+html, body {
+        background-color:rgb(225, 225, 225);
+        margin: 0;
+        padding: 0;
+}
+
+.top-area{
+        background-color:rgb(41, 41, 41);
+}
+
+.menu-item{
+        color: white;
+        display: inline-block;
+        padding: 16px;
+        text-decoration: none;
+}
+
+.brand{
+        font-size: 20px;
+        font-weight:600;
+}
+
+.main-area{
+        max-width: 700px; 
+        margin: auto;
+}
+
+button {
+        color: rgb(106, 16, 126);
+        background-color:rgb(195, 195, 255);
+        display: inline-block;
+        padding: 8px;
+        text-align: center;
+        border-radius: 15px;
+        display:  block;
+        margin : 0 auto;
+}
+
+a{
+        text-decoration: none;
+}
+      
+button:hover {
+        background-color: rgb(243, 243, 249);
+}
+
+.bottom-area{
+        background-color:rgb(201,201,201);
+        padding: 10px;
+        text-align: center;
+}
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 100%;
+        font-family: "Roboto", sans-serif;
+}
+
+body_gd {
+        margin: 0;
+        min-height: 88vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(252, 248, 243);
+        background: linear-gradient(
+          217deg,
+          /* rgba(252, 248, 243, 1) 12%,
+          rgba(253, 80, 112, 1) 59%,
+          rgba(255, 159, 77, 1) 96% */ 
+          #736eb8 12%,
+          #D19FBA 59%,
+          #FFF7CE 100%,
+          #F6D891 12%,
+          #E1A77F 10%
+        );
+}
+box {
+        background-color: #f1ecec;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0px 0px 10px;
+}
+.head {
+        text-align: center;
+        margin-bottom: 20px;
+}
+.head h2 {
+        font-weight: 700;
+        font-size: 2rem;
+}
+.head p {
+        font-weight: 300;
+}
+
+input {
+        border: none;
+        background-color: #ffffff;
+        border-radius: 7px;
+        padding: 15px;
+        outline: none;
+}
+input::placeholder {
+        font-style: italic;
+        font-size: 90%;
+        color: #9d9d9d;
+}
+input:focus {
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(3, 5, 0, 0.12), 0 1px 2px rgba(3, 5, 0, 0.12);
+        transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.element {
+        margin: 8px 0;
+        align-items: center;
+}

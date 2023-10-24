@@ -1,23 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generate QrCode</title>
+    <title>QR Prompt</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div>
-        <input type="text" id="id" placeholder="promptpay id">
-        <input type="number" id="amount" placeholder="amount">
-        <button onclick="genQR()">Generate</button>
-    </div>
-    <img id="imgqr" src="" style="width: 400px; object-fit: contain;">
-    <br>
-    <button id="download-btn" style="display: none">
-        <a id="download-img" href="" download="promptpay-qr.png">Download</a>
-    </button>
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<body>
+    <header class="top-area">
+        <a class="menu-item brand" href="#">QR Prompt</a>
+    </header>
+    <body_gd>
+        <div class="main-area">
+            <box>
+                <div class="head">
+                    <h2>QR Prompt</h2>
+                    <p>generate QR code PromptPay</p>
+                </div>
+
+                <!-- <form action="" method="POST"> -->
+                <div class="element">
+                    <label for="id">Promptpay ID : </label>
+                    <input type="text" id="id" placeholder="Enter Promptpay ID">
+                </div>
+                <div>
+                    <label for="amount">Amount (Baht): </label>
+                    <input type="number" id="amount" placeholder="Enter amount(baht)">
+                </div>
+                <div class="element">
+                    <button onclick="genQR()">Generate</button>
+                </div>
+                <!-- </form> -->
+
+                <img id="imgqr" src="" style="width: 350px; object-fit: contain;">
+                <br>
+                <div class="element">
+                    <button id="download-btn" style="display: none">
+                        <a id="download-img" href="" download="promptpay-qr.png">Download</a>
+                    </button>
+                </div>
+            </box>
+        </div>
+    </body_gd>
+
+    <footer class="bottom-area">
+        <f>OS_CSKMITL</f>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script>
         function genQR() {
             $.ajax({
@@ -27,16 +60,17 @@
                     id: $("#id").val(),
                     amount: parseFloat($("#amount").val())
                 },
-                success: function(response) {
+                success: function (response) {
                     console.log('good', response)
                     $("#imgqr").attr('src', response.Result)
                     $("#download-img").attr('href', response.Result)
                     $("#download-btn").attr('style', "")
-                }, error: function(err) {
+                }, error: function (err) {
                     console.log('bad', err)
                 }
             })
         }
     </script>
 </body>
+
 </html>
