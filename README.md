@@ -42,4 +42,4 @@ open file "index.html" in ./frontend directory.
 - click **Generate**.
 - download image at **Download** button.
 
-## Enjoy :)
+## Have Fun! :)
