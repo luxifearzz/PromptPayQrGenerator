@@ -13,6 +13,13 @@ CSOS KMITL Docker Project
 
 ## How To Run Project
 
+### Pull Docker Image
+Open the command prompt and run this command
+```bash
+docker pull luxifearzz/os-promptpay-generator
+```
+
+<!--- comment
 ### Build Docker Image
 Open the command prompt and go to the directory where this project file is. then run this command
 
@@ -23,15 +30,16 @@ docker build -t os-promptpay-generator .
 *Note_1: "os-promptpay-generator" is a docker image name, feel free to change it to any name you want.*
 
 *Note_2: don't forget "." at the end of the command!*
+end comment --->
 
 ### Run Docker Image
 after building the docker image, run this command to start the service.
 
 ```bash
-docker run -d -p 3000:3000 os-promptpay-generator
+docker run -d -p 3000:3000 luxifearzz/os-promptpay-generator
 ```
 
-*Note: if you change the image name when building it. you must change it at this point to run too.*
+[comment]: <> (*Note: if you change the image name when building it. you must change it at this point to run too.*)
 
 ### Run Project File
 open file "index.html" in ./frontend directory.
