@@ -36,7 +36,7 @@ docker run -d -p 3000:3000 os-promptpay-generator
 ### Run Project File
 open file "index.html" in ./frontend directory.
 
-## How does it work
+## How to use our service
 - enter promptpay ID or phone number.
 - enter the amount. (if don't want to specify the amount, enter 0 or leave it empty)
 - click **Generate**.
