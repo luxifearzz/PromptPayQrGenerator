@@ -33,7 +33,7 @@ docker build -t os-promptpay-generator .
 end comment --->
 
 ### Run Docker Image
-after building the docker image, run this command to start the service.
+after building the docker image, run this command to start the service
 
 ```bash
 docker run -d -p 3000:3000 luxifearzz/os-promptpay-generator
